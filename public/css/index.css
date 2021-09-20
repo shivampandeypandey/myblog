@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+body{
+    background: #a6be7e;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/bg.jpg');
+    background-color: rgb(180, 203, 204);
+}
+
+.custom-field{
+    position: relative;
+    font-size: 14px;
+    padding-top: 20%;
+    margin-top: 5%;
+}
+
+.card{
+    background-color: rgb(228, 238, 44);
+    border: 2px solid rgb(27, 24, 31);
+}
+
+.custom-field input{
+    padding: 12px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1.5px solid gray;
+    outline-color: rgb(179, 204, 212);
+}
+
+.custom-field .placeholder{
+    position: absolute;
+    left: 12%;
+    top: calc(50% + 25px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+}
+
+.custom-field input:valid + .placeholder,
+.custom-field input:focus + .placeholder{
+    top: 21px;
+    font-size: 10px;
+    color: #222;
+    padding: 5px;
+    background: white;
+}
+
+#sign-up{
+    display:none;
+}
+
+
+a{
+    padding: 9px;
+}
+
+center{
+    margin-top: 8px;
+}
+
+.message{
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(196, 209, 219);
+}
